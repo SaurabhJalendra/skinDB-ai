@@ -1,0 +1,82 @@
+[
+  {
+    "slug": "chanel-no5-eau-de-parfum",
+    "name": "Chanel N°5 Eau de Parfum",
+    "brand": "Chanel",
+    "category": "Fragrance",
+    "hero_image_url": "/images/chanel-no5.jpg",
+    "description": "The world's most famous fragrance, a timeless classic with notes of rose, jasmine, and vanilla."
+  },
+  {
+    "slug": "nars-blush-orgasm",
+    "name": "NARS Blush \"Orgasm\"",
+    "brand": "NARS",
+    "category": "Makeup",
+    "hero_image_url": "/images/nars-orgasm.jpg",
+    "description": "Iconic peachy-pink blush with golden shimmer that flatters all skin tones."
+  },
+  {
+    "slug": "mac-retro-matte-ruby-woo",
+    "name": "MAC Retro Matte Lipstick \"Ruby Woo\"",
+    "brand": "MAC",
+    "category": "Makeup",
+    "hero_image_url": "/images/mac-ruby-woo.jpg",
+    "description": "Legendary retro matte lipstick in a universally flattering blue-red shade."
+  },
+  {
+    "slug": "estee-lauder-advanced-night-repair",
+    "name": "Estée Lauder Advanced Night Repair Serum",
+    "brand": "Estée Lauder",
+    "category": "Skincare",
+    "hero_image_url": "/images/estee-lauder-anr.jpg",
+    "description": "Revolutionary nighttime serum that repairs damage and prevents future signs of aging."
+  },
+  {
+    "slug": "sk-ii-facial-treatment-essence",
+    "name": "SK-II Facial Treatment Essence",
+    "brand": "SK-II",
+    "category": "Skincare",
+    "hero_image_url": "/images/sk-ii-essence.jpg",
+    "description": "Cult-favorite essence with Pitera that transforms skin texture and radiance."
+  },
+  {
+    "slug": "la-mer-creme-de-la-mer",
+    "name": "La Mer Crème de la Mer",
+    "brand": "La Mer",
+    "category": "Skincare",
+    "hero_image_url": "/images/la-mer-creme.jpg",
+    "description": "Luxury moisturizing cream with Miracle Broth that deeply hydrates and soothes skin."
+  },
+  {
+    "slug": "bioderma-sensibio-h2o",
+    "name": "Bioderma Sensibio H2O Micellar Water",
+    "brand": "Bioderma",
+    "category": "Skincare",
+    "hero_image_url": "/images/bioderma-micellar.jpg",
+    "description": "Gentle micellar water that removes makeup and impurities without irritation."
+  },
+  {
+    "slug": "maybelline-great-lash-mascara",
+    "name": "Maybelline Great Lash Mascara",
+    "brand": "Maybelline",
+    "category": "Makeup",
+    "hero_image_url": "/images/maybelline-great-lash.jpg",
+    "description": "Iconic drugstore mascara that defines and lengthens lashes with its classic formula."
+  },
+  {
+    "slug": "beautyblender-original-sponge",
+    "name": "Beautyblender Original Sponge",
+    "brand": "Beautyblender",
+    "category": "Tools",
+    "hero_image_url": "/images/beautyblender-sponge.jpg",
+    "description": "Revolutionary makeup sponge that creates flawless, airbrushed foundation application."
+  },
+  {
+    "slug": "shu-uemura-eyelash-curler",
+    "name": "Shu Uemura Eyelash Curler",
+    "brand": "Shu Uemura",
+    "category": "Tools",
+    "hero_image_url": "/images/shu-uemura-curler.jpg",
+    "description": "Professional eyelash curler that lifts and curls lashes for a wide-eyed, doll-like look."
+  }
+]

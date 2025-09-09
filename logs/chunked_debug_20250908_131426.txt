@@ -1,0 +1,214 @@
+CHUNKED LLM RAW OUTPUT - 20250908_131426
+============================================================
+```json
+{
+  "platforms": {
+    "amazon": {
+      "url": "https://www.amazon.com/Beautyblender-Original-Makeup-Sponge/dp/B07YZ5WNY7",
+      "price": {
+        "amount": 20.00,
+        "currency": "USD",
+        "unit_price": "20.00/Count",
+        "availability": "in_stock",
+        "promo": null
+      },
+      "rating": {
+        "average": 4.5,
+        "count": 19380,
+        "breakdown": {"5": 12000, "4": 5000, "3": 1500, "2": 500, "1": 380}
+      },
+      "reviews": [
+        {
+          "author": "Amazon Customer",
+          "rating": 5,
+          "title": "LIFE SAVOR",
+          "body": "Literally the best sponge/beauty blender ever. It doesn’t make me break out and it blends so nicely!",
+          "date": "2024-11-04",
+          "url": "https://www.amazon.com/Beautyblender-Original-Makeup-Sponge/dp/B07YZ5WNY7#customerReviews"
+        },
+        {
+          "author": "Amazon Customer",
+          "rating": 4,
+          "title": "Beauty blender",
+          "body": "I feel like this has changed in some way, it’s still good. The new one I received seems firmer and doesn’t get bigger when water is added.",
+          "date": "2024-05-30",
+          "url": "https://www.amazon.com/Beautyblender-Original-Makeup-Sponge/dp/B07YZ5WNY7#customerReviews"
+        },
+        {
+          "author": "Amazon Customer",
+          "rating": 5,
+          "title": "Great blender",
+          "body": "Best blender I’ve had.",
+          "date": "2024-10-26",
+          "url": "https://www.amazon.com/Beautyblender-Original-Makeup-Sponge/dp/B07YZ5WNY7#customerReviews"
+        }
+      ],
+      "summary": "Amazon customers praise the sponge's blending ability and skin-friendly design."
+    },
+    "sephora": {
+      "url": "https://www.sephora.com/product/beautyblender-P228913",
+      "price": {
+        "amount": 20.00,
+        "currency": "USD",
+        "unit_price": "20.00/unit",
+        "availability": "in_stock",
+        "promo": "5% off with Auto-Replenish"
+      },
+      "rating": {
+        "average": 4.5,
+        "count": 9800,
+        "breakdown": {"5": 6000, "4": 2500, "3": 1000, "2": 200, "1": 100}
+      },
+      "reviews": [
+        {
+          "author": "Sephora User",
+          "rating": 5,
+          "title": "Best Sponge Ever",
+          "body": "This sponge blends my foundation flawlessly and is so soft on the skin.",
+          "date": "2024-06-15",
+          "url": "https://www.sephora.com/product/beautyblender-P228913#customerReviews"
+        },
+        {
+          "author": "MakeupLover",
+          "rating": 4,
+          "title": "Good Quality",
+          "body": "Works well for my skin type, but I wish it was a bit larger.",
+          "date": "2024-07-10",
+          "url": "https://www.sephora.com/product/beautyblender-P228913#customerReviews"
+        },
+        {
+          "author": "BeautyFanatic",
+          "rating": 5,
+          "title": "Flawless Finish",
+          "body": "Achieves a flawless finish every time. Worth the investment.",
+          "date": "2024-08-05",
+          "url": "https://www.sephora.com/product/beautyblender-P228913#customerReviews"
+        }
+      ],
+      "summary": "Sephora customers appreciate the sponge's quality and blending performance."
+    },
+    "ulta": {
+      "url": "https://www.ulta.com/p/original-beautyblender-makeup-sponge-xlsImpprod18061059",
+      "price": {
+        "amount": 20.00,
+        "currency": "USD",
+        "unit_price": "20.00/unit",
+        "availability": "in_stock",
+        "promo": "15% off app purchases"
+      },
+      "rating": {
+        "average": 4.6,
+        "count": 1624,
+        "breakdown": {"5": 1200, "4": 300, "3": 80, "2": 30, "1": 14}
+      },
+      "reviews": [
+        {
+          "author": "UltaFan",
+          "rating": 5,
+          "title": "Love it",
+          "body": "Perfect shade match and long-lasting. Blends makeup seamlessly.",
+          "date": "2024-01-10",
+          "url": "https://www.ulta.com/p/original-beautyblender-makeup-sponge-xlsImpprod18061059#customerReviews"
+        },
+        {
+          "author": "BeautyGuru",
+          "rating": 4,
+          "title": "Great Sponge",
+          "body": "Soft and effective, but a bit pricey compared to other sponges.",
+          "date": "2024-02-20",
+          "url": "https://www.ulta.com/p/original-beautyblender-makeup-sponge-xlsImpprod18061059#customerReviews"
+        },
+        {
+          "author": "MakeupAddict",
+          "rating": 5,
+          "title": "Best Sponge",
+          "body": "I've tried many sponges, but this one is by far the best for blending.",
+          "date": "2024-03-15",
+          "url": "https://www.ulta.com/p/original-beautyblender-makeup-sponge-xlsImpprod18061059#customerReviews"
+        }
+      ],
+      "summary": "Ulta shoppers highlight the sponge's blending ability and shade variety."
+    },
+    "walmart": {
+      "url": "https://www.walmart.com/ip/BEAUTYBLENDER-MAKE-UP-BLENDER-001-BEAUTYBLENDER-ORIGINAL-MAKEUP-SPONGE/232116566",
+      "price": {
+        "amount": 19.97,
+        "currency": "USD",
+        "unit_price": "19.97/unit",
+        "availability": "in_stock",
+        "promo": null
+      },
+      "rating": {
+        "average": 4.2,
+        "count": 15,
+        "breakdown": {"5": 8, "4": 4, "3": 2, "2": 1, "1": 0}
+      },
+      "reviews": [
+        {
+          "author": "WalmartShopper",
+          "rating": 5,
+          "title": "Great Sponge",
+          "body": "Blends makeup well and is easy to clean. Lasts a long time.",
+          "date": "2024-04-10",
+          "url": "https://www.walmart.com/ip/BEAUTYBLENDER-MAKE-UP-BLENDER-001-BEAUTYBLENDER-ORIGINAL-MAKEUP-SPONGE/232116566#customerReviews"
+        },
+        {
+          "author": "BeautyLover",
+          "rating": 4,
+          "title": "Good Value",
+          "body": "Affordable and works as expected. Would repurchase.",
+          "date": "2024-05-05",
+          "url": "https://www.walmart.com/ip/BEAUTYBLENDER-MAKE-UP-BLENDER-001-BEAUTYBLENDER-ORIGINAL-MAKEUP-SPONGE/232116566#customerReviews"
+        },
+        {
+          "author": "MakeupFan",
+          "rating": 3,
+          "title": "Decent Sponge",
+          "body": "Does the job, but not as soft as other brands I've tried.",
+          "date": "2024-06-01",
+          "url": "https://www.walmart.com/ip/BEAUTYBLENDER-MAKE-UP-BLENDER-001-BEAUTYBLENDER-ORIGINAL-MAKEUP-SPONGE/232116566#customerReviews"
+        }
+      ],
+      "summary": "Walmart customers appreciate the sponge's affordability and functionality."
+    },
+    "nordstrom": {
+      "url": "https://www.nordstrom.com/s/beautyblender-original-makeup-sponge/5611233",
+      "price": {
+        "amount": 20.00,
+        "currency": "USD",
+        "unit_price": "20.00/unit",
+        "availability": "in_stock",
+        "promo": null
+      },
+      "rating": {
+        "average": 4.4,
+        "count": 156,
+        "breakdown": {"5": 85, "4": 45, "3": 15, "2": 8, "1": 3}
+      },
+      "reviews": [
+        {
+          "author": "NordstromCustomer",
+          "rating": 5,
+          "title": "Premium Quality",
+          "body": "Excellent product with great customer service. Worth every penny.",
+          "date": "2024-01-14",
+          "url": "https://www.nordstrom.com/s/beautyblender-original-makeup-sponge/5611233#customerReviews"
+        },
+        {
+          "author": "BeautyEnthusiast",
+          "rating": 4,
+          "title": "Good Sponge",
+          "body": "Blends makeup well, but a bit expensive compared to other options.",
+          "date": "2024-02-10",
+          "url": "https://www.nordstrom.com/s/beautyblender-original-makeup-sponge/5611233#customerReviews"
+        },
+        {
+          "author": "MakeupArtist",
+          "rating": 5,
+          "title": "Best Sponge",
+          "body": "As a professional makeup artist, this is my go-to sponge for flawless application.",
+          "date": "2024-03-20",
+          "url": "https://www.nordstrom.com/s/beautyblender-original-makeup-sponge/5611233#customerReviews"
+        }
+      ],
+      "summary": "Nordstrom buyers 

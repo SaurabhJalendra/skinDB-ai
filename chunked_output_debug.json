@@ -1,0 +1,6 @@
+{
+  "error": "OPENROUTER_API_KEY environment variable is required",
+  "status": "failed",
+  "product_name": "Beautyblender Original Sponge",
+  "approach": "chunked"
+}
