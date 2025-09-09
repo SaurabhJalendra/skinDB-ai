@@ -5,24 +5,29 @@ import { motion } from 'framer-motion';
 import { ExternalLink, Play, Heart, Eye, Users, Calendar } from 'lucide-react';
 
 interface YoutubeReview {
-  creator: string;
-  channel: string;
-  title: string;
-  summary: string;
-  rating: string;
+  author?: string | null;
+  rating?: number | null;
+  title?: string | null;
+  body: string;
+  posted_at?: string | null;
+  url?: string | null;
+  // Additional YouTube-specific fields if available
+  creator?: string;
+  channel?: string;
   views?: string;
-  date?: string;
-  url: string;
 }
 
 interface InstagramReview {
-  creator: string;
-  handle: string;
-  post_type: string;
-  summary: string;
+  author?: string | null;
+  rating?: number | null;
+  title?: string | null;
+  body: string;
+  posted_at?: string | null;
+  url?: string | null;
+  // Additional Instagram-specific fields if available
+  handle?: string;
+  post_type?: string;
   likes?: string;
-  date?: string;
-  url: string;
 }
 
 interface InfluencerPlatform {
@@ -120,19 +125,21 @@ export default function InfluencersTab({ youtube, instagram }: InfluencersTabPro
                     <Play className="h-6 w-6 text-red-600" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-charcoal">{review.creator}</h4>
-                    <p className="text-sm text-charcoal/60">{review.channel}</p>
+                    <h4 className="font-semibold text-charcoal">{review.creator || review.author || 'Unknown Creator'}</h4>
+                    <p className="text-sm text-charcoal/60">{review.channel || 'YouTube Channel'}</p>
                   </div>
                 </div>
                 <div className="text-right">
-                  <div className="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-medium">
-                    {review.rating}
-                  </div>
+                  {review.rating && (
+                    <div className="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-medium">
+                      {typeof review.rating === 'number' ? `${review.rating}/5` : review.rating}
+                    </div>
+                  )}
                 </div>
               </div>
 
-              <h5 className="font-medium text-charcoal mb-2">{review.title}</h5>
-              <p className="text-charcoal/80 mb-4">{review.summary}</p>
+              {review.title && <h5 className="font-medium text-charcoal mb-2">{review.title}</h5>}
+              <p className="text-charcoal/80 mb-4">{review.body}</p>
 
               <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-4 text-sm text-charcoal/60">
@@ -142,22 +149,24 @@ export default function InfluencersTab({ youtube, instagram }: InfluencersTabPro
                       <span>{review.views} views</span>
                     </div>
                   )}
-                  {review.date && (
+                  {review.posted_at && (
                     <div className="flex items-center space-x-1">
                       <Calendar className="h-4 w-4" />
-                      <span>{review.date}</span>
+                      <span>{new Date(review.posted_at).toLocaleDateString()}</span>
                     </div>
                   )}
                 </div>
-                <a
-                  href={review.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center space-x-1 text-red-600 hover:text-red-700 transition-colors"
-                >
-                  <span className="text-sm font-medium">Watch Review</span>
-                  <ExternalLink className="h-4 w-4" />
-                </a>
+                {review.url && (
+                  <a
+                    href={review.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-1 text-red-600 hover:text-red-700 transition-colors"
+                  >
+                    <span className="text-sm font-medium">Watch Review</span>
+                    <ExternalLink className="h-4 w-4" />
+                  </a>
+                )}
               </div>
             </div>
           ))}
@@ -180,18 +189,19 @@ export default function InfluencersTab({ youtube, instagram }: InfluencersTabPro
                     <Heart className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-charcoal">{review.creator}</h4>
-                    <p className="text-sm text-charcoal/60">{review.handle}</p>
+                    <h4 className="font-semibold text-charcoal">{review.author || 'Instagram Influencer'}</h4>
+                    <p className="text-sm text-charcoal/60">{review.handle || '@instagram'}</p>
                   </div>
                 </div>
                 <div className="text-right">
                   <div className="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm font-medium">
-                    {review.post_type}
+                    {review.post_type || 'Post'}
                   </div>
                 </div>
               </div>
 
-              <p className="text-charcoal/80 mb-4">{review.summary}</p>
+              {review.title && <h5 className="font-medium text-charcoal mb-2">{review.title}</h5>}
+              <p className="text-charcoal/80 mb-4">{review.body}</p>
 
               <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-4 text-sm text-charcoal/60">
@@ -201,22 +211,24 @@ export default function InfluencersTab({ youtube, instagram }: InfluencersTabPro
                       <span>{review.likes} likes</span>
                     </div>
                   )}
-                  {review.date && (
+                  {review.posted_at && (
                     <div className="flex items-center space-x-1">
                       <Calendar className="h-4 w-4" />
-                      <span>{review.date}</span>
+                      <span>{new Date(review.posted_at).toLocaleDateString()}</span>
                     </div>
                   )}
                 </div>
-                <a
-                  href={review.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center space-x-1 text-pink-600 hover:text-pink-700 transition-colors"
-                >
-                  <span className="text-sm font-medium">View Post</span>
-                  <ExternalLink className="h-4 w-4" />
-                </a>
+                {review.url && (
+                  <a
+                    href={review.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-1 text-pink-600 hover:text-pink-700 transition-colors"
+                  >
+                    <span className="text-sm font-medium">View Post</span>
+                    <ExternalLink className="h-4 w-4" />
+                  </a>
+                )}
               </div>
             </div>
           ))}

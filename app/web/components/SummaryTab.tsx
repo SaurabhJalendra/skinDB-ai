@@ -150,11 +150,35 @@ export default function SummaryTab({ pros, cons, verdict, aspectScores }: Summar
               const colorClass = getAspectColor(normalizedScore);
               const label = getAspectLabel(normalizedScore);
               
+              // Enhanced aspect name formatting for category-specific aspects
+              const getAspectDisplayName = (aspect: string) => {
+                const aspectMap: Record<string, string> = {
+                  'longevity': 'Longevity & Durability',
+                  'texture': 'Texture & Blendability', 
+                  'irritation': 'Gentleness (Low Irritation)',
+                  'value': 'Value for Money',
+                  'sillage': 'Sillage & Projection',
+                  'uniqueness': 'Uniqueness & Character',
+                  'versatility': 'Versatility & Occasions',
+                  'coverage': 'Coverage & Buildability',
+                  'color_accuracy': 'Color Accuracy',
+                  'ease_of_application': 'Application Ease',
+                  'effectiveness': 'Overall Effectiveness',
+                  'absorption': 'Absorption & Finish',
+                  'hydration': 'Hydration & Moisture',
+                  'non_comedogenic': 'Pore-Friendly',
+                  'durability': 'Tool Durability',
+                  'ergonomics': 'Comfort & Ergonomics',
+                  'cleaning_ease': 'Easy to Clean'
+                };
+                return aspectMap[aspect] || aspect.charAt(0).toUpperCase() + aspect.slice(1).replace(/_/g, ' ');
+              };
+              
               return (
                 <div key={aspect} className="space-y-2">
                   <div className="flex items-center justify-between">
-                    <span className="font-medium text-charcoal capitalize">
-                      {aspect.replace(/_/g, ' ')}
+                    <span className="font-medium text-charcoal">
+                      {getAspectDisplayName(aspect)}
                     </span>
                     <div className="flex items-center space-x-2">
                       <span className="text-sm text-charcoal/60">

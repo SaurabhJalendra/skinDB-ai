@@ -1,6 +1,6 @@
-# 🎨 Prism Beauty - Premium AI-Powered Beauty Product Intelligence
+# 🎭 Prism - Next-Generation AI Beauty Intelligence Platform
 
-A sophisticated, AI-powered beauty product aggregator that consolidates pricing, reviews, and insights from multiple platforms using OpenRouter's GPT-4o-mini-search-preview model via LlamaIndex. Features a luxury beauty aesthetic with production-ready architecture.
+Advanced AI-powered beauty intelligence platform featuring adaptive category-aware analysis, parallel processing capabilities, and real-time multi-platform data aggregation. Includes influencer insights from YouTube and Instagram with cutting-edge machine learning technology.
 
 ## 🌟 Product Overview
 

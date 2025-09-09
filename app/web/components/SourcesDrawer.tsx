@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ExternalLink, Info, Globe, FileText, Copy, Check } from 'lucide-react';
+import { retailerLabel } from '@/lib/retailers';
 
 interface SourcesDrawerProps {
   citations: Record<string, string>;
@@ -80,11 +81,18 @@ export default function SourcesDrawer({ citations }: SourcesDrawerProps) {
   };
 
   const getSourceLabel = (source: string) => {
+    // Try retailer label first for platform consistency
+    if (source.includes('amazon.com')) return retailerLabel('amazon');
+    if (source.includes('sephora.com')) return retailerLabel('sephora');
+    if (source.includes('ulta.com')) return retailerLabel('ulta');
+    if (source.includes('walmart.com')) return retailerLabel('walmart');
+    if (source.includes('nordstrom.com')) return retailerLabel('nordstrom');
+    if (source.includes('brand_site')) return retailerLabel('brand_site');
+    
+    // Non-retailer sources
     if (source.includes('reddit.com')) return 'Reddit';
     if (source.includes('youtube.com')) return 'YouTube';
-    if (source.includes('amazon.com')) return 'Amazon';
-    if (source.includes('sephora.com')) return 'Sephora';
-    if (source.includes('ulta.com')) return 'Ulta';
+    if (source.includes('instagram.com')) return 'Instagram';
     return 'External Source';
   };
 

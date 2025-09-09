@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# 🎨 Prism Beauty - Full Application Startup Script
-# This script starts the complete Prism Beauty application with all services
+# 🎨 Prism - Full Application Startup Script
+# This script starts the complete Prism application with all services
 
 set -e
 
@@ -35,7 +35,7 @@ print_header() {
     echo -e "${PURPLE}
 ╔══════════════════════════════════════════════════════════════╗
 ║                                                              ║
-║            🎨 Prism Beauty Application                  ║
+║            🎨 Prism Application                  ║
 ║                 Premium AI-Powered Beauty Intelligence       ║
 ║                                                              ║
 ╚══════════════════════════════════════════════════════════════╝${NC}"
@@ -379,7 +379,7 @@ main() {
     
     print_header
     
-    print_status "Starting Prism Beauty Application..."
+    print_status "Starting Prism Application..."
     echo
     
     check_docker

@@ -1,19 +1,19 @@
 @echo off
-REM 🎨 Prism Beauty - Full Application Startup Script (Windows)
-REM This script starts the complete Prism Beauty application with all services
+REM 🎨 Prism - Full Application Startup Script (Windows)
+REM This script starts the complete Prism application with all services
 
 setlocal enabledelayedexpansion
 
 echo.
 echo ╔══════════════════════════════════════════════════════════════╗
 echo ║                                                              ║
-echo ║            🎨 Prism Beauty Application                  ║
+echo ║            🎨 Prism Application                  ║
 echo ║                 Premium AI-Powered Beauty Intelligence       ║
 echo ║                                                              ║
 echo ╚══════════════════════════════════════════════════════════════╝
 echo.
 
-echo [INFO] Starting Prism Beauty Application...
+echo [INFO] Starting Prism Application...
 echo.
 
 REM Check if Docker is installed and running

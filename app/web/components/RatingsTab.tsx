@@ -171,25 +171,38 @@ export default function RatingsTab({ ratings }: RatingsTabProps) {
             {rating.breakdown && (
               <div className="space-y-2">
                 <div className="text-sm font-medium text-gray-700 mb-2 font-inter">Rating Distribution</div>
-                {Object.entries(rating.breakdown)
-                  .sort(([a], [b]) => parseInt(b) - parseInt(a))
-                  .map(([stars, percentage]) => (
-                    <div key={stars} className="flex items-center space-x-2">
-                      <div className="flex items-center space-x-1 w-16">
-                        <span className="text-xs text-gray-600">{stars}</span>
-                        <Star className="h-3 w-3 text-yellow-400 fill-current" />
-                      </div>
-                      <div className="flex-1 bg-gray-200 rounded-full h-2">
-                        <div
-                          className="bg-yellow-400 h-2 rounded-full transition-all duration-500"
-                          style={{ width: `${percentage * 100}%` }}
-                        />
-                      </div>
-                      <span className="text-xs text-gray-600 w-12 text-right">
-                        {Math.round(percentage * 100)}%
-                      </span>
-                    </div>
-                  ))}
+                {(() => {
+                  // Calculate total count for percentage calculation
+                  const totalCount = Object.values(rating.breakdown).reduce((sum: number, count) => sum + (count as number), 0);
+                  
+                  return Object.entries(rating.breakdown)
+                    .sort(([a], [b]) => parseInt(b) - parseInt(a))
+                    .map(([stars, count]) => {
+                      const percentage = totalCount > 0 ? (count as number) / totalCount : 0;
+                      return (
+                        <div key={stars} className="flex items-center space-x-2">
+                          <div className="flex items-center space-x-1 w-16">
+                            <span className="text-xs text-gray-600">{stars}</span>
+                            <Star className="h-3 w-3 text-yellow-400 fill-current" />
+                          </div>
+                          <div className="flex-1 bg-gray-200 rounded-full h-2">
+                            <div
+                              className="bg-yellow-400 h-2 rounded-full transition-all duration-500"
+                              style={{ width: `${percentage * 100}%` }}
+                            />
+                          </div>
+                          <div className="flex items-center space-x-1 w-20 text-right">
+                            <span className="text-xs text-gray-600">
+                              {Math.round(percentage * 100)}%
+                            </span>
+                            <span className="text-xs text-gray-500">
+                              ({count})
+                            </span>
+                          </div>
+                        </div>
+                      );
+                    });
+                })()}
               </div>
             )}
           </div>

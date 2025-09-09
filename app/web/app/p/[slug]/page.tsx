@@ -70,7 +70,7 @@ export default function ProductPage() {
         updatedLabel: 'Never', 
         globalRating: null,
         metadata: {
-          title: 'Product Not Found | Prism Beauty',
+          title: 'Product Not Found | Prism',
           description: 'The requested product could not be loaded.'
         }
       };
@@ -82,7 +82,7 @@ export default function ProductPage() {
     
     const globalRating = productData.summary?.aspect_scores?.overall?.toString() || null;
 
-    const title = `${productData.product.brand || 'Beauty'} ${productData.product.name} | Prism Beauty`;
+    const title = `${productData.product.brand || 'Beauty'} ${productData.product.name} | Prism`;
     const description = productData.summary?.verdict || 
       `Discover ${productData.product.name} with comprehensive pricing, ratings, and reviews from top retailers.`;
 
@@ -97,7 +97,7 @@ export default function ProductPage() {
     return (
       <div className="min-h-screen bg-ivory">
         <Head>
-          <title>Loading... | Prism Beauty</title>
+          <title>Loading... | Prism</title>
           <meta name="description" content="Loading product information..." />
         </Head>
         <NavBar />
@@ -112,7 +112,7 @@ export default function ProductPage() {
     return (
       <div className="min-h-screen bg-ivory">
         <Head>
-          <title>Product Not Found | Prism Beauty</title>
+          <title>Product Not Found | Prism</title>
           <meta name="description" content="The requested product could not be loaded." />
         </Head>
         <NavBar />
@@ -260,8 +260,14 @@ export default function ProductPage() {
                   transition={{ duration: 0.3 }}
                 >
                   <InfluencersTab 
-                    youtube={productData?.reviews?.youtube}
-                    instagram={productData?.reviews?.instagram}
+                    youtube={{
+                      reviews: productData?.reviews?.youtube || [],
+                      summary: productData?.reviews?.youtube?.length > 0 ? 'YouTube influencer reviews available' : undefined
+                    }}
+                    instagram={{
+                      reviews: productData?.reviews?.instagram || [],
+                      summary: productData?.reviews?.instagram?.length > 0 ? 'Instagram influencer posts available' : undefined
+                    }}
                   />
                 </motion.div>
               </TabsContent>

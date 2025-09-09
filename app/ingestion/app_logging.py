@@ -1,5 +1,5 @@
 """
-Structured logging configuration for the Beauty Aggregator ingestion service.
+Structured logging configuration for the Prism ingestion service.
 Provides JSON-formatted logs for production and human-readable logs for development.
 """
 

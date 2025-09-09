@@ -1,4 +1,4 @@
--- Sample test data for Prism Beauty to verify frontend display
+-- Sample test data for Prism to verify frontend display
 
 -- Add sample offers (pricing data)
 INSERT INTO offers (id, product_id, retailer, price_usd, currency, url, scraped_at) VALUES 

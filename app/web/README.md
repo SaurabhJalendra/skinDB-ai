@@ -1,4 +1,4 @@
-# Prism Beauty Frontend
+# Prism Frontend
 
 Premium Next.js application with luxury beauty aesthetic, featuring AI-powered product insights and multi-platform data aggregation.
 

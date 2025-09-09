@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { Star, Clock, TrendingUp } from 'lucide-react';
 import type { Product } from '@/lib/types';
+import { getCategoryInfo } from '@/lib/category';
 
 interface ProductHeaderProps {
   product: Product;
@@ -45,9 +46,12 @@ export default function ProductHeader({
               {product.name}
             </h1>
             {product.category && (
-              <p className="text-gray-700 mt-2 font-inter">
-                {product.category}
-              </p>
+              <div className="flex items-center gap-2 mt-2">
+                <span className="text-lg">{getCategoryInfo(product.name, product.brand, product.category).icon}</span>
+                <p className="text-gray-700 font-inter">
+                  {product.category}
+                </p>
+              </div>
             )}
           </div>
 

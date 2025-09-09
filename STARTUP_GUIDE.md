@@ -1,4 +1,4 @@
-# 🚀 Prism Beauty - Startup Guide
+# 🚀 Prism - Startup Guide
 
 ## Quick Start
 

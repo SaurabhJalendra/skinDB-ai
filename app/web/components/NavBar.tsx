@@ -10,7 +10,7 @@ export default function NavBar() {
           {/* Logo */}
           <div className="flex items-center">
             <h1 className="font-playfair text-2xl font-bold text-charcoal">
-              Prism Beauty
+              Prism
             </h1>
           </div>
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# 🔧 Prism Beauty - Comprehensive Application Diagnostics
+# 🔧 Prism - Comprehensive Application Diagnostics
 # This script performs systematic testing and diagnosis of the entire application
 
 set -e
@@ -48,7 +48,7 @@ print_header() {
     echo -e "${PURPLE}
 ╔══════════════════════════════════════════════════════════════╗
 ║                                                              ║
-║           🔧 Prism Beauty Diagnostics                  ║
+║           🔧 Prism Diagnostics                  ║
 ║                                                              ║
 ╚══════════════════════════════════════════════════════════════╝${NC}"
 }
@@ -295,8 +295,8 @@ test_frontend() {
     
     print_test "Testing frontend content"
     local frontend_response=$(curl -s http://localhost:3000)
-    if echo "$frontend_response" | grep -q "Prism Beauty"; then
-        print_success "Frontend contains expected content (Prism Beauty branding)"
+    if echo "$frontend_response" | grep -q "Prism"; then
+        print_success "Frontend contains expected content (Prism branding)"
     else
         print_warning "Frontend may not be loading correctly"
     fi
@@ -451,7 +451,7 @@ main() {
             show_summary
             ;;
         "help"|"-h"|"--help")
-            echo "Prism Beauty Diagnostics Script"
+            echo "Prism Diagnostics Script"
             echo
             echo "Usage: $0 [TEST_SUITE]"
             echo

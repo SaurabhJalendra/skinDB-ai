@@ -81,7 +81,7 @@ export default function ComparePage() {
     return (
       <div className="min-h-screen bg-ivory">
         <Head>
-          <title>Compare Products | Prism Beauty</title>
+          <title>Compare Products | Prism</title>
         </Head>
         <NavBar />
         <div className="container mx-auto px-4 py-16">
@@ -99,7 +99,7 @@ export default function ComparePage() {
     return (
       <div className="min-h-screen bg-ivory">
         <Head>
-          <title>Compare Products | Prism Beauty</title>
+          <title>Compare Products | Prism</title>
         </Head>
         <NavBar />
         <div className="container mx-auto px-4 py-16">
@@ -124,7 +124,7 @@ export default function ComparePage() {
   return (
     <div className="min-h-screen bg-ivory">
       <Head>
-        <title>Compare Products | Prism Beauty</title>
+        <title>Compare Products | Prism</title>
         <meta name="description" content="Compare beauty products side-by-side with pricing, ratings, and specifications." />
       </Head>
       

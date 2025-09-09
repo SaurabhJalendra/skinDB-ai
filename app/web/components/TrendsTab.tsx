@@ -6,6 +6,7 @@ import { TrendingUp, Filter, Calendar } from 'lucide-react';
 import PriceHistoryChart from './PriceHistoryChart';
 import { fetchPriceHistory, transformToChartData, getAvailableRetailers } from '@/lib/history';
 import useSWR from 'swr';
+import { retailerLabel, retailerColor } from '@/lib/retailers';
 
 interface TrendsTabProps {
   productId: string;
@@ -171,8 +172,8 @@ export default function TrendsTab({ productId, availableRetailers }: TrendsTabPr
                 onChange={() => handleRetailerToggle(retailer)}
                 className="w-4 h-4 text-lilac border-charcoal/30 rounded focus:ring-lilac/50"
               />
-              <span className="text-sm font-medium text-charcoal capitalize">
-                {retailer}
+              <span className="text-sm font-medium text-charcoal">
+                {retailerLabel(retailer)}
               </span>
             </motion.label>
           ))}

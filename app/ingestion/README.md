@@ -1,4 +1,4 @@
-# Prism Beauty Ingestion Service
+# Prism Ingestion Service
 
 FastAPI-based ingestion service that uses LlamaIndex and OpenRouter to aggregate beauty product data from multiple sources.
 
@@ -32,7 +32,7 @@ LLM_TIMEOUT_SECS=120
 MAX_JSON_BYTES=300000
 OPENROUTER_BASE_URL=https://openrouter.ai/api/v1
 OPENROUTER_REFERER=http://localhost:3000
-OPENROUTER_TITLE=Prism Beauty
+OPENROUTER_TITLE=Prism
 ```
 
 ## 🚀 Running

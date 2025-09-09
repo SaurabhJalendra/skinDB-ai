@@ -45,7 +45,24 @@ export default function SpecsTab({ items }: SpecsTabProps) {
   const getSpecIcon = (key: string): React.ReactNode => {
     const lowerKey = key.toLowerCase();
     
-    if (lowerKey.includes('size') || lowerKey.includes('volume')) {
+    // Category-specific icons for enhanced LLM specs
+    if (lowerKey.includes('fragrance_notes') || lowerKey.includes('notes')) {
+      return <span className="text-purple-500">🌸</span>;
+    } else if (lowerKey.includes('concentration') || lowerKey.includes('longevity_hours')) {
+      return <span className="text-blue-500">⏰</span>;
+    } else if (lowerKey.includes('sillage') || lowerKey.includes('projection')) {
+      return <span className="text-green-500">💨</span>;
+    } else if (lowerKey.includes('coverage_level') || lowerKey.includes('coverage')) {
+      return <span className="text-orange-500">🎨</span>;
+    } else if (lowerKey.includes('shade_range') || lowerKey.includes('undertones')) {
+      return <span className="text-pink-500">🌈</span>;
+    } else if (lowerKey.includes('active_ingredients') || lowerKey.includes('ingredients')) {
+      return <span className="text-emerald-500">🧪</span>;
+    } else if (lowerKey.includes('skin_concerns') || lowerKey.includes('concerns')) {
+      return <span className="text-red-500">🎯</span>;
+    } else if (lowerKey.includes('material') || lowerKey.includes('bristle_type')) {
+      return <span className="text-gray-600">🔧</span>;
+    } else if (lowerKey.includes('size') || lowerKey.includes('volume')) {
       return <span className="text-blue-500">📏</span>;
     } else if (lowerKey.includes('form') || lowerKey.includes('texture')) {
       return <span className="text-purple-500">✨</span>;

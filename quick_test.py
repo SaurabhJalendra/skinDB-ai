@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Quick LLM test for Prism Beauty
+Quick LLM test for Prism
 """
 import requests
 import json
@@ -98,7 +98,7 @@ def test_llm_ingestion_simple(product_id):
         return False
 
 def main():
-    print("🎨 Prism Beauty - Quick LLM Test")
+    print("🎨 Prism - Quick LLM Test")
     print("=" * 40)
     
     # Step 1: Test connectivity

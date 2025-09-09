@@ -11,6 +11,7 @@ import {
   Legend,
   ResponsiveContainer
 } from 'recharts';
+import { retailerLabel } from '@/lib/retailers';
 
 interface PriceHistoryChartProps {
   data: Array<{ day: string; [retailer: string]: number | null | string }>;
@@ -78,7 +79,7 @@ export default function PriceHistoryChart({ data, retailers }: PriceHistoryChart
             labelStyle={{ color: '#374151', fontWeight: '600' }}
             formatter={(value: number, name: string) => [
               value ? `$${value.toFixed(2)}` : 'N/A',
-              name
+              retailerLabel(name)
             ]}
             labelFormatter={(label) => {
               const date = new Date(label);
@@ -92,6 +93,7 @@ export default function PriceHistoryChart({ data, retailers }: PriceHistoryChart
           <Legend 
             wrapperStyle={{ paddingTop: '20px' }}
             iconType="line"
+            formatter={(value) => retailerLabel(value)}
           />
           {retailers.map((retailer, index) => (
             <Line

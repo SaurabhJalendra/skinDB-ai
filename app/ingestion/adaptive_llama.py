@@ -14,8 +14,8 @@ logger = logging.getLogger(__name__)
 # OpenRouter Configuration
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 OPENROUTER_MODEL = "openai/gpt-4o-mini-search-preview"
-OPENROUTER_REFERER = "Prism Beauty"
-OPENROUTER_TITLE = "Prism Beauty API"
+OPENROUTER_REFERER = "Prism"
+OPENROUTER_TITLE = "Prism API"
 
 # Category-specific specifications and aspects
 CATEGORY_SPECS = {

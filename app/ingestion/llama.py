@@ -184,8 +184,8 @@ def get_openai_client() -> OpenAI:
         raise ValueError("OPENROUTER_API_KEY environment variable is required")
     
     # Get optional headers
-    referer = os.getenv("OPENROUTER_REFERER", "Prism Beauty")
-    title = os.getenv("OPENROUTER_TITLE", "Prism Beauty")
+    referer = os.getenv("OPENROUTER_REFERER", "Prism")
+    title = os.getenv("OPENROUTER_TITLE", "Prism")
     
     headers = {
         "HTTP-Referer": referer,
@@ -210,8 +210,8 @@ def get_llama_llm() -> LlamaOpenAI:
         raise ValueError("OPENROUTER_API_KEY environment variable is required")
     
     # Get optional headers
-    referer = os.getenv("OPENROUTER_REFERER", "Prism Beauty")
-    title = os.getenv("OPENROUTER_TITLE", "Prism Beauty")
+    referer = os.getenv("OPENROUTER_REFERER", "Prism")
+    title = os.getenv("OPENROUTER_TITLE", "Prism")
     
     # Configure LlamaIndex to use OpenRouter with explicit headers
     llm = LlamaOpenAI(
@@ -256,8 +256,8 @@ def fetch_product_snapshot(product_name: str, brand: Optional[str] = None) -> st
         user_prompt = build_user_prompt(product_name, brand)
         
         # Get optional headers for the request
-        referer = os.getenv("OPENROUTER_REFERER", "Prism Beauty")
-        title = os.getenv("OPENROUTER_TITLE", "Prism Beauty")
+        referer = os.getenv("OPENROUTER_REFERER", "Prism")
+        title = os.getenv("OPENROUTER_TITLE", "Prism")
         
         # Make the API call with proper headers and increased token limit
         response = client.chat.completions.create(

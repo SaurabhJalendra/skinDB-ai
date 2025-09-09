@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Test script to verify LLM integration for Prism Beauty
+Test script to verify LLM integration for Prism
 """
 import os
 import sys
@@ -64,7 +64,7 @@ def test_llm_ingestion(product_id):
         return False
 
 def main():
-    print("🎨 Prism Beauty - LLM Integration Test")
+    print("🎨 Prism - LLM Integration Test")
     print("=" * 50)
     
     # Test 1: Backend Health

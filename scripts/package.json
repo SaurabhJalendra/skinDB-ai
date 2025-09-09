@@ -1,7 +1,7 @@
 {
   "name": "beauty-aggregator-scripts",
   "version": "1.0.0",
-  "description": "Database seeding and utility scripts for Prism Beauty",
+  "description": "Database seeding and utility scripts for Prism",
   "main": "seed_products.ts",
   "scripts": {
     "seed": "ts-node seed_products.ts",

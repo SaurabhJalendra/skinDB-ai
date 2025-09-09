@@ -79,7 +79,7 @@ export default function HomePage() {
     return (
       <div className="min-h-screen bg-ivory">
         <Head>
-          <title>Error | Prism Beauty</title>
+          <title>Error | Prism</title>
           <meta name="description" content="Failed to load beauty products" />
         </Head>
         <NavBar />
@@ -96,11 +96,11 @@ export default function HomePage() {
   return (
     <>
       <Head>
-        <title>Prism Beauty - AI-Powered Beauty Intelligence</title>
-        <meta name="description" content="Discover luxury beauty products with AI-powered insights, multi-platform pricing, and curated customer reviews from top retailers." />
-        <meta name="keywords" content="beauty, cosmetics, skincare, makeup, reviews, pricing, AI insights" />
-        <meta property="og:title" content="Prism Beauty - AI-Powered Beauty Intelligence" />
-        <meta property="og:description" content="Discover luxury beauty products with AI-powered insights and multi-platform pricing." />
+        <title>Prism - AI-Powered Beauty Intelligence</title>
+        <meta name="description" content="Next-generation beauty intelligence with adaptive AI, parallel processing, and real-time multi-platform insights." />
+        <meta name="keywords" content="beauty, AI, adaptive analysis, parallel processing, cosmetics, skincare, makeup, reviews, pricing" />
+        <meta property="og:title" content="Prism - AI-Powered Beauty Intelligence" />
+        <meta property="og:description" content="Advanced beauty intelligence platform with category-aware AI analysis and influencer insights." />
         <meta property="og:type" content="website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -108,7 +108,7 @@ export default function HomePage() {
       <div className="min-h-screen bg-ivory">
         <NavBar />
         
-        {/* Hero Section */}
+        {/* Modern Hero Section */}
         <section className="container mx-auto px-4 py-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -116,12 +116,50 @@ export default function HomePage() {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
+            {/* AI Badge */}
+            <motion.div
+              className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-purple-100 to-pink-100 text-purple-800 text-sm font-medium mb-6"
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              🤖 Powered by Adaptive AI & Parallel Processing
+            </motion.div>
+
             <h1 className="text-5xl md:text-6xl font-playfair text-charcoal mb-6">
-              Discover Beauty
+              Next-Generation
+              <span className="text-transparent bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text block">Beauty Intelligence</span>
             </h1>
-            <p className="text-xl text-charcoal/70 max-w-2xl mx-auto leading-relaxed">
-              Curated insights from top retailers, real customer reviews, and AI-powered analysis
+            
+            <p className="text-xl text-charcoal/70 max-w-3xl mx-auto leading-relaxed mb-8">
+              Advanced category-aware AI analysis, real-time multi-platform data, 
+              and influencer insights powered by cutting-edge machine learning
             </p>
+
+            {/* Feature highlights */}
+            <motion.div 
+              className="flex flex-wrap justify-center gap-6 text-sm text-charcoal/60"
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
+                <span>Adaptive AI Analysis</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
+                <span>3-5x Faster Processing</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-pink-500 rounded-full"></div>
+                <span>YouTube & Instagram</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                <span>9+ Platform Integration</span>
+              </div>
+            </motion.div>
           </motion.div>
         </section>
 

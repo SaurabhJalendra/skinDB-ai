@@ -1,5 +1,5 @@
 @echo off
-REM 🔧 Prism Beauty - Comprehensive Application Diagnostics (Windows)
+REM 🔧 Prism - Comprehensive Application Diagnostics (Windows)
 REM This script performs systematic testing and diagnosis of the entire application
 
 setlocal enabledelayedexpansion
@@ -16,7 +16,7 @@ set WARNINGS=0
 echo.
 echo ╔══════════════════════════════════════════════════════════════╗
 echo ║                                                              ║
-echo ║           🔧 Prism Beauty Diagnostics                  ║
+echo ║           🔧 Prism Diagnostics                  ║
 echo ║                                                              ║
 echo ╚══════════════════════════════════════════════════════════════╝
 echo.
@@ -354,7 +354,7 @@ if errorlevel 1 (
 
 echo [TEST] Testing frontend content
 set /a TOTAL_TESTS+=1
-curl -s http://localhost:3000 | findstr "Prism Beauty" >nul 2>&1
+curl -s http://localhost:3000 | findstr "Prism" >nul 2>&1
 if errorlevel 1 (
     echo [WARNING] Frontend may not be loading correctly
     set /a WARNINGS+=1
@@ -449,7 +449,7 @@ pause
 goto end
 
 :show_help
-echo Prism Beauty Diagnostics Script
+echo Prism Diagnostics Script
 echo.
 echo Usage: %0 [TEST_SUITE]
 echo.
