@@ -1,0 +1,8 @@
+{"ts": "2025-09-08T05:00:16.531079Z", "level": "INFO", "msg": "Logging configured", "path": "", "method": "", "status": "", "dur_ms": "", "product_id": "", "logger": "app_logging"}
+{"ts": "2025-09-08T05:01:16.284213Z", "level": "INFO", "msg": "Logging configured", "path": "", "method": "", "status": "", "dur_ms": "", "product_id": "", "logger": "app_logging"}
+{"ts": "2025-09-08T05:02:13.566027Z", "level": "INFO", "msg": "Logging configured", "path": "", "method": "", "status": "", "dur_ms": "", "product_id": "", "logger": "app_logging"}
+{"ts": "2025-09-08T05:02:26.616392Z", "level": "INFO", "msg": "GET / - 200", "path": "/", "method": "GET", "status": 200, "dur_ms": 0.53, "product_id": null, "logger": "request"}
+{"ts": "2025-09-08T05:02:27.163629Z", "level": "WARNING", "msg": "GET /favicon.ico - 404", "path": "/favicon.ico", "method": "GET", "status": 404, "dur_ms": 0.4, "product_id": null, "logger": "request"}
+{"ts": "2025-09-08T05:07:52.890572Z", "level": "INFO", "msg": "Logging configured", "path": "", "method": "", "status": "", "dur_ms": "", "product_id": "", "logger": "app_logging"}
+{"ts": "2025-09-08T05:09:41.511071Z", "level": "INFO", "msg": "GET / - 200", "path": "/", "method": "GET", "status": 200, "dur_ms": 0.43, "product_id": null, "logger": "request"}
+{"ts": "2025-09-08T05:09:41.745652Z", "level": "WARNING", "msg": "GET /favicon.ico - 404", "path": "/favicon.ico", "method": "GET", "status": 404, "dur_ms": 0.36, "product_id": null, "logger": "request"}
